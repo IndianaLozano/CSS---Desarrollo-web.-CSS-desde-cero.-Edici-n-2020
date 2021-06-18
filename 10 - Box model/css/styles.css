@@ -1,4 +1,52 @@
+/* Elements inline don't have measurements (I can't set width and height). 
+
+Margin is the property who let me generate space between elements. 
+It's a shorthand (abbreviated property) that controls the 4 possible sides
+to give margins to.
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+It admits up to 4 values in clockwise order:
+    4 values -> margin: top right bottom left,
+    3 values -> margin: top left-right bottom,
+    2 values -> margin top-bottom left-right,
+    1 value -> margin: top-right-bottom-left.
+
+Elements inline: I can only set horizontal margins.
+
+The following examples apply only for block elements:
+    margin-left: auto -> the navigator calculates the margin and sticks the block to the right side.
+    margin-right: auto -> the navigator calculates the margin and sticks the block to the left side.
+
+To center an element, do:
+    margin-left: auto;
+    margin-right: auto;
+*/
+
 body{
-    background-color: rgb(230, 19, 19);
+    background-color: #333;
     color:#fff;
+}
+
+.block{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+}
+
+.inline{
+    text-align: center;
+    background-color: lightcoral;
+    color: inherit;
+    margin-right: 20px;
+}
+
+.title{
+    text-align: center;
+    background-color: pink;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
