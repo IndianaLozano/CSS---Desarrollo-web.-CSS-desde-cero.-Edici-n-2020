@@ -1,0 +1,84 @@
+/* Cómo funciona CSS
+    Especificidad -> establece cómo de específico es un selector para saber qué estilo aplicar.
+    El cálculo se realiza con la siguiente fórmula:
+        Etiquetas y pseudoelementos 001
+        Clases, atributos y pseudoclases 010
+        Ids 100
+        Estilos en línea 1000
+
+        1 etiqueta + 1 clase + 1 id = 111.
+    El problema de la especificidad se resuelve siempre utilizando solamente CLASES.
+    !important GANA A TODO Y NO SE USA NUNCA.
+    CSS SPECIFICITY GRAPH GENERATOR.
+    https://jonassebastianohlsson.com/specificity-graph/
+    https://autoprefixer.github.io/
+
+    Cascada -> Funciona siempre que la especificidad sobre el elemento sea la misma.
+    Herencia -> Capacidad que tienen algunos elementos de heredar algunas propiedades de 
+                sus elementos contenedores (padres, abuelos, etc.).
+                Los enlaces no heredan propiedades de sus padres. 
+                "color: inherit" hace que el enlace herede color de su padre.
+                "color: initial" hace que todo lo que se está heredando se omita, y 
+                    vuelva el color al estado inicial.
+
+*/
+
+/* Todos los siguientes aplican estilos a h1 pero solamente uno de ellos gana 
+
+h1.title#title{
+    background-color: tomato;
+}
+
+h1{  selector de etiqueta 
+    background-color: red;
+}
+
+.title{ selector de clase 
+    background-color: blue;
+}
+
+#title{  selector de id 
+    background-color: green;
+}
+
+h1.title{ 
+    background-color: yellow;
+}
+
+h1#title{ 
+    background-color: teal;
+}
+
+ Haciendo, por ejemplo:
+
+h1.title{ 
+    background-color: yellow !important;
+}
+
+logramos ignorar la especificidad y aplicar directamente este estilo 
+*/
+
+body{
+    background-color: #333;
+}
+.title{
+    color: cyan;
+    font-size: 10px;
+}
+
+.text{
+    color: red;
+}
+
+.link{
+    color: inherit;
+}
+
+.list{
+    color: indianred;
+}
+
+.list-item-extra{
+    color:initial;
+}
+

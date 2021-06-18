@@ -1,0 +1,86 @@
+/* SELECTORES 
+
+    Selectores Simples
+        Selectores elementales: suelen usarse para un par de cuestiones muy concretas
+            Selector universal -> *
+            Selector de tipo o de etiqueta -> Nombre de la etiqueta
+        Selectores de atributo
+            id -> #id del elemento       Los selectores de id son case sensitive.
+            clase -> clase del elemento
+            otros atributos -> [atributo]
+                                [atributo=valor]
+                                [atributo^=valor] para comprobar si el atributo empieza por ese valor
+                                [atributo*=valor] para comprobar si el atributo contiene a ese valor
+                                [atributo$=valor] para comprobar si el atributo termina con ese valor
+                                [atributo|=valor] para el idioma lang
+
+SELECTOR UNIVERSAL: 
+
+*{
+    background-color: rgb(161, 53, 53);
+}
+
+SELECTOR DE TIPO O ETIQUETA:
+
+h1{
+    background-color: lightcyan;
+}
+
+p{
+    background-color: lightgreen;
+}
+
+ul{
+    background-color: red;
+}
+
+li{
+    background-color: blue;
+} 
+
+SELECTOR DE ID:
+Teniendo, por ejemplo, en index.html: <h1 id="title"> Conectar HTML y CSS</h1>, hago aquí:
+#title{
+    background-color: lightgreen;
+}
+
+SELECTOR DE CLASE:
+Teniendo, por ejemplo, en index.html: <h1 class="title"> Conectar HTML y CSS</h1>, hago aquí:
+
+.title{
+    background-color: lightsalmon;
+}
+
+.text{
+    background-color: limegreen;
+}
+
+SELECTOR DE ATRIBUTO:
+
+[href]{
+    background-color: mediumorchid;
+}
+
+[href="https://google.com"]{
+    background-color: mediumvioletred;
+}
+
+[href^="color"]{ /* se pueden omitir las comillas si es una sola palabra 
+    background-color: orange;
+}
+
+[href*="modo"]{ 
+    background-color: brown;
+}
+
+[href$="rojo"]{ 
+    background-color: red;
+}
+
+[lang|="en"]{ // funciona para 
+    background-color: magenta;
+}
+
+*/ 
+
+/* Ctrl + }   sirve para crear un comentario de bloque */

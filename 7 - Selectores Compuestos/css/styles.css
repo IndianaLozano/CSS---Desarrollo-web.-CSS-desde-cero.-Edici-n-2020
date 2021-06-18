@@ -1,0 +1,49 @@
+/* SELECTORES
+    Selectores Compuestos
+        Selectores Agrupados -> Se agrupan los selectores separados por comas y se escribe el 
+                                estilo una sola vez.
+        Selectores Combinadores
+            Selectores Descendientes -> Se agrupan los selectores separados por un espacio, de forma 
+                                        descendiente. Se selecciona un padre (div) y cierto hijo (title2).
+            Selector de hermano siguiente +: con valor1 + valor2, solamente podemos seleccionar al hermano
+                                        siguiente a valor1, que es valor 2.
+            Selector de hermanos siguientes ~: seleccionamos a todos los hermanos siguientes.
+            Selector de hijo directo >:  -> Selecciona SOLAMENTE los hijos directos. 
+        Pseudoclases - Pseudoelementos.
+
+Los estilos que vienen por debajo sobreescriben a los que están por encima.
+
+SELECTORES AGRUPADOS:
+
+.text,
+.text2,
+.text3, 
+.text4{
+    background-color: steelblue;
+}
+
+div .title2{
+    background-color: teal;
+}
+
+
+SELECTOR DE HERMANO SIGUIENTE:
+
+.title + .subtitle{
+    background-color: green;
+}
+
+
+SELECTOR DE HERMANOS SIGUIENTES:
+
+.title2 ~ p{
+    background-color: indianred;
+}
+
+SELECTOR DE HIJO DIRECTO:
+
+*/
+
+.container > p{
+    background-color: green;
+}
