@@ -15,8 +15,8 @@ Además tendréis prácticas por secciones para poder practicar todas las cosas 
 Además el curso está dividido en tres secciones, básico; intermedio y avanzado, de esa forma irás aprendiendo las bases antes de meterte en temas más avanzados que te pueden confundir.
 
 # Nivel Básico
-•Primeros pasos
-•Estado de CSS
+* Primeros pasos
+* Estado de CSS
 •Fundamentos de CSS
 •Box Model
 •Posicionamiento
