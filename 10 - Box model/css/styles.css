@@ -1,6 +1,6 @@
 /* Elements inline don't have measurements (I can't set width and height). 
 
-Margin is the property who let me generate space between elements. 
+MARGIN is the property who let me generate space between elements. 
 It's a shorthand (abbreviated property) that controls the 4 possible sides
 to give margins to.
     margin-top
@@ -22,31 +22,112 @@ The following examples apply only for block elements:
 To center an element, do:
     margin-left: auto;
     margin-right: auto;
+
+NEVER use margin: auto; because it ignores some margins set before.
+
+PADDING: is the property that allows us to generate space between the margin and the box. 
+    It's a shorthand (abbreviated property) that controls the 4 possible sides
+    to give padding to.
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
+It admits up to 4 values in clockwise order:
+    4 values -> padding: top right bottom left,
+    3 values -> padding: top left-right bottom,
+    2 values -> padding top-bottom left-right,
+    1 value -> padding: top-right-bottom-left.
+
+BORDER: is the property that allows us to change the box's side. 
+    It's a shorthand (abbreviated property) that groups three properties:
+    border-width;
+        border-top-width;
+        border-right-width;
+        border-bottom-width;
+        border-left-width;
+
+    border-style;
+        border-top-style;
+        border-right-style;
+        border-bottom-style;
+        border-left-style;
+    
+            Values for style:
+            none
+            hidden
+            dotted
+            dashed
+            solid
+            double
+            groove
+            ridge
+            inset
+            outset
+
+    border-color;
+        border-top-color;
+        border-right-color;
+        border-bottom-color;
+        border-left-color;
+        
+    border: width style color;
+
+BOX-SIZING: is the property that allows us to control the calculation made by the browser
+    when modifying the properties of borders, padding, and content.
+        content-box -> default value.
+        border-box -> element's size calculation including padding and border.
 */
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-color: #333;
     color:#fff;
+    margin:0;
+}
+
+.header{
+    background-color: red;
+    height: 50px;
 }
 
 .block{
     background-color: purple;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
     margin-left: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 5px solid red;
 }
 
 .inline{
-    text-align: center;
     background-color: lightcoral;
     color: inherit;
-    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 100px;
+    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
 .title{
     text-align: center;
     background-color: pink;
     width: 200px;
-    margin-left: auto;
     margin-right: auto;
+}
+
+.buttons{
+    background-color: steelblue;
+    padding: 20px 20px;
+    margin-top: 30px;
+}
+
+.button{
+    border: 20px solid red;
+    border-right-color: blue;
+    border-left-width: 5px;
+
 }
