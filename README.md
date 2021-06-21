@@ -1,11 +1,11 @@
-#### CSS---Desarrollo-web.-CSS-desde-cero.-Edici-n-2020
+#### CSS---Desarrollo-web.-CSS-desde-cero.-Edición-2020
 
 ### About this course
 Aprende todas las bases de CSS desde cero, con este curso entenderás el porqué de todo lo que sucede en CSS.
 
 ![Ir al curso]https://www.udemy.com/course/css-edicion-2020/
 
-##Description
+## Description
 El objetivo de este curso es enseñaros la forma correcta de la escritura de CSS según los estándares oficiales en 2021. Estoy subiendo actualmente la actualización del curso y voy sustituyendo los vídeos nuevos por los viejos.
 
 Espero que este curso os ayude a continuar y mejorar vuestro conocimiento en el desarrollo web de forma correcta, conociendo TODA la teoría que hay detrás del BOX MODEL, FLEXBOX, GRID, POSITION, TRANSFORMACIONES, TRANSICIONES, ANIMACIONES y la mayoría de las opciones que tiene CSS que cada año son más y más!!
