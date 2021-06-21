@@ -1,6 +1,6 @@
 #### CSS---Desarrollo-web.-CSS-desde-cero.-Edici-n-2020
 
-###About this course
+### About this course
 Aprende todas las bases de CSS desde cero, con este curso entenderás el porqué de todo lo que sucede en CSS.
 
 ![Ir al curso]https://www.udemy.com/course/css-edicion-2020/
@@ -14,7 +14,7 @@ Además tendréis prácticas por secciones para poder practicar todas las cosas 
 
 Además el curso está dividido en tres secciones, básico; intermedio y avanzado, de esa forma irás aprendiendo las bases antes de meterte en temas más avanzados que te pueden confundir.
 
-#Nivel Básico
+# Nivel Básico
 •Primeros pasos
 •Estado de CSS
 •Fundamentos de CSS
@@ -27,7 +27,7 @@ Además el curso está dividido en tres secciones, básico; intermedio y avanzad
 •Textos
 •Variables CSS
 
-#Nivel Intermedio
+# Nivel Intermedio
 •Metodología BEM
 •Responsive design
 •Imágenes
@@ -41,7 +41,7 @@ Además el curso está dividido en tres secciones, básico; intermedio y avanzad
 •Flexbox
 •Grid
 
-#Nivel Avanzado
+# Nivel Avanzado
 •Funcionamiento de CSS en el navegador
 •Propiedades animables
 •Estado inicial de los elementos
