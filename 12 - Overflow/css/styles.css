@@ -1,0 +1,49 @@
+/*
+A content overflows when the box is smaller than the container.
+Overflow: is the property that controls what the box must do when its contents overflow from the container.
+It's a shorthand that includes overflow-x and overflow-y. It has four possible values:
+    visible -> default value.
+    hidden -> content that overflows will not be visible. If we apply this property to only one axis, the other will be automatically set to the scroll value.
+    scroll -> scroll bars will appear on the assigned axis.
+    auto -> scroll bars will appear if necessary
+overflow-y: hidden;
+overflow-y: scroll; -> appears on Y AND X if necessary.
+overflow-y: auto;
+
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+    color: black;
+    border-radius: 50px;
+    overflow: auto;
+}
+
+.box-1,
+.box-2{
+    padding: 30px;
+    border: 10px;
+    background-color: lightcoral;
+    height: 160px;
+}
+
+.text{
+    /* width: 360px;*/
+    margin:0;
+}

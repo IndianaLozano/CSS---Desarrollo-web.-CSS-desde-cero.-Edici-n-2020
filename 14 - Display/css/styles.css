@@ -1,0 +1,35 @@
+/*
+Display property: it changes the content of the elements inside the browser.
+It admits several values:
+    none -> causes the item to not display but keeps loading.
+    block -> makes the element block.
+    inline -> makes the element inline.
+    inline-block -> makes the element inline but admits measurements and vertical margins.
+*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.text{
+    background-color: lightcoral;
+    /* display: none; */
+    /* display: inline;
+    width: 200px;
+    margin-bottom: 100px; */
+
+}
+
+.link{
+    background-color: #fff;
+    /* display:block;
+    width: 100px;
+    margin-bottom: 20px; */
+    display: inline-block;
+    width: 50px;
+    margin-top: 50px;
+}

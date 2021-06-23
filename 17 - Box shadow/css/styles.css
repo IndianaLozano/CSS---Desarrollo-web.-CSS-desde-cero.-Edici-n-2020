@@ -1,0 +1,38 @@
+/*
+BOX-SHADOW: property created to add shadow effects to our box. It creates a clon from our box, respecting its box-model shape (width, height, roundness).
+
+Box-shadow's syntax can be written in different ways according to what we want to do.
+
+Possible values:
+    offset-x -> x displacement (required).
+    offset-y -> y displacement (required).
+    blur-radius -> shadow blur.
+    spread-radius -> shadow expansion
+    color -> shadow color (if it is not specified, it will inherit it from the element to which it belongs).
+    inset -> determines if the shadow will be inside or outside.
+
+    box-shadow: 5px 5px 30px 20px blue; -> shadow displaced 5px on the X axis, 5px on the Y axis, 30px of blur, 20px of padding, and color blue.
+    box-shadow: 5px 5px red, 10px 10px blue; -> 2 shadows from the same box
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+.box{
+    background-color: darkcyan;
+    width: 200px;
+    padding: 50px;
+    margin: 20px 0;
+    color:red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    /* box-shadow: 5px 5px 30px inset blue; */
+    box-shadow: 5px 5px red, 10px 10px blue;
+}

@@ -1,0 +1,55 @@
+/* 
+TEXT-ALIGN is the property that allows to horizontally align the content of a BLOCK element as long as the content has no declared width.
+It accepts four possible values:
+    text-align: left; 
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.text{
+    text-align: justify;
+}
+
+.box{
+    background-color: #666;
+    width: 100px;
+    padding: 10px 0;
+    margin: 20px 0;
+    border: 2px solid lightcoral;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link{
+    color: #fff;
+    background-color: #666;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Image inside a container: center all with text-aling ONLY IF the image has not display:block; */
+.img-container{
+    text-align: center;
+}
+.img{
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+

@@ -1,0 +1,39 @@
+/*
+    OUTLINE: property that allows us to draw a border outside the box model. 
+    It's a shorthand that includes:
+        outline-width
+        outline-style
+        outline-color
+    It has the same properties and syntax as border, but with some differences.
+        It doesn't need space because it isn't part of the box-model.
+        It cannot be rounded.
+        Its sides cannot be controlled independently.
+    It also has the outline-offset property, which allows us to increase or decrease the outline distance in relation to the box it belongs to.
+*/
+
+*{
+}
+    box-sizing: border-box;
+
+body{
+    background-color: #333;
+    color: fff;
+}
+
+.border,
+.outline{
+    background-color: #666;
+    width: 100px;
+    padding: 10px 20px;
+    margin: 50px 100px;
+}
+
+.border{
+    border: 2px solid lightcoral;
+}
+
+.outline{
+    outline: 3px inset lightcoral;
+    outline-offset: -13px;
+    border: 5px solid lightgreen;
+}

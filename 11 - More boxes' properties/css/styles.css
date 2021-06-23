@@ -1,0 +1,59 @@
+/*
+COMENTAR UNA LÍNEA SELECCIONADA: Ctrl + K + C
+
+Code adjusted to fit in the viewport: Alt Z
+
+BORDER-RADIUS: is the property that allows us round vertices independently.
+It's a shorthand that includes 4 properties:
+    border-top-left-radius -> radius of upper left edge.
+    border-top-right-radius -> radius of upper right edge.
+    border-bottom-left-radius -> lower left edge radius.
+    border-bottom-right-radius -> lower right edge radius.
+If it only receives one value, it will draw a circle at each vertex, of the radius we specify.
+    border-radius: 50px; -> Circle with 50px of radius.
+If it only receives two values, first value specifies top-left and bottom-right radius size, second value specifies top-right and bottom-left radius size.
+With three values: first for top-left radius size, 
+                second for top-right and bottom-left, 
+                third for bottom-right.
+
+    border-top-right-radius: 50px 100px; -> ellipse with 50px on radius X and 100px on radius Y.
+    border-radius: 50px / 100px; -> an ellipse of 50px on X and 100px on Y;
+    border-radius: 50px 20px / 100px 80px; -> 2 ellipses, one (top-left and bottom right) of 50px on X and 
+                    100px on Y, and another (top-right and bottom left) of 20px on X and 80px on Y;
+    border-radius: 10px 30px 50px / 20px 40px 60px; -> top-left ellipse 10x20, top-right ellipse 30x40, bottom-right ellipse 50x60, bottom-left ellipse 30x40;
+    border-radius: 10px 30px 50px 70px / 20px 40px 60px 80px; -> top-left ellipse 10x20, top-right ellipse 30x40, bottom-right ellipse 50x60, bottom-left ellipse 70x80;
+
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+
+    /* border-radius: 50px; 
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 200px;
+    border-radius: 50px 100px; 
+    
+    */
+    border-radius: 10px 50px / 10px 50px;
+
+
+}

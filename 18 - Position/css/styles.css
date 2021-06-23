@@ -1,0 +1,30 @@
+/*
+
+POSITION property allows us to position elements. 
+
+Flujo de renderizado / Rendering flow: as a general rule, elements are drawn from left to right and top to bottom. Point 0,0 of the elements, as a general rule, is the top left corner.
+
+Reserved space / espacio reservado: space that an element has assigned in the browser.
+
+Positioned element / elemento posicionado: the element has the property position with a value different than "static", which is the value that this property has by default.
+
+Stacking context / contexto de apilamiento: order in which overlapping boxes will be stacked.
+
+When positioning an element, 5 properties are enabled that we can use to move the elements in the 3 axes:
+
+    top -> the element will move from the top the distance that we have indicated.
+
+    right -> the element will move from the right the distance that we have indicated.
+
+    bottom -> the element will move from the bottom the distance that we have indicated.
+
+    left -> the element will move from the left the distance that we have indicated.
+
+    z-index -> allows to move the element in the stacking context (Z axis).
+
+    NOTE: if we declare the property top and/or left for an element, property bottom and/or right won't work.
+
+Possible values for POSITION:
+
+    static -> default value
+*/
