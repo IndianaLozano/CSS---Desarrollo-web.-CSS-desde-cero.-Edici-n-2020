@@ -8,7 +8,7 @@ Reserved space / espacio reservado: space that an element has assigned in the br
 
 Positioned element / elemento posicionado: the element has the property position with a value different than "static", which is the value that this property has by default.
 
-Stacking context / contexto de apilamiento: order in which overlapping boxes will be stacked.
+Stacking context / contexto de apilamiento: order in which overlapping boxes will be stacked, inside the same container.
 
 When positioning an element, 5 properties are enabled that we can use to move the elements in the 3 axes:
 
@@ -26,5 +26,134 @@ When positioning an element, 5 properties are enabled that we can use to move th
 
 Possible values for POSITION:
 
-    static -> default value
+    static -> default value. With this value the element is NOT POSITIONED and we can't move it.
+
+    relative -> the element keeps its position and measurements in the rendered flow and will keep its reserved space. If it's moved, it will move using its position in the HTML as a reference point.
+
+    absolute -> the element will lose its measurements and its reserved space. If it's moved, it will move using positioned parent element as a reference; if it doesn't have any, it will use the HTML element as a reference.
+
+    fixed -> the element will lose its measurements and its reserved space. If it's moved, it will use the HTML element as a reference, and also it will stay fixed in that position even if we scroll.
+
+    sticky -> is a mix of relative and fixed position. With this position type, values top, left, bottom and right don't work to move the element, but to indicate at which point it will have a fixed positioning behavior. Until it reaches that point, it will behave as if it had a relative.
 */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    /* padding-top: 70px; */
+}
+
+/* img{
+    width: 100%;
+    display: block;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: lightskyblue;
+    position: absolute;
+}
+
+.box-1{
+    background-color: lightcoral;
+
+    /* position: relative;
+    left: 100px;
+    top: 100px;
+
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.link{
+    display: block;
+    background-color: lime;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+} 
+
+/* When a position absolute is given to an element, we generate a block context automatically to be able to give it measurements and for the browser to place that element. 
+
+.header{
+    text-align: center;
+    /* padding: 25px 0; 
+
+    background-color: lightskyblue;
+    color: orangered;
+
+    /* position: fixed;
+    top: 0;
+    width: 100%; 
+
+    /* position: sticky;
+    top: 0px; 
+
+    height: 200px;
+}
+
+.menu{
+    position: sticky;
+    top: 0px;
+}
+
+.article-title{
+    position: sticky;
+    top: 0px;
+    background-color: #333;
+    margin: 0;
+} */
+
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #333;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: #555;
+    position: relative;
+}
+.box-1{
+    background-color: lightcoral;
+    position: relative;
+    color: #333;
+    left: 150px;
+    z-index: -2;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
+
+.box-3{
+    background-color: lightseagreen;
+    position: relative;
+}
+
