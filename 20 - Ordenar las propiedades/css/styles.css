@@ -1,0 +1,39 @@
+/*
+Order properties is important. There's no rule about how to do it, but...
+
+1- Positioning properties
+2- Box model properties
+3 - Text properties
+4 - Visual properties (colors, borders, background...)
+5 - The rest
+ */
+
+body{
+    /* Position */
+    position: relative;
+    top: 0;
+    left: 0;
+    color: black;
+
+    /* Box model */
+    display: block;
+    width: 300px;
+    height: 600px;
+    padding: 10px;
+    overflow: hidden;
+
+    /* Text properties */
+    font-size: 16px;
+    text-align: center;
+
+    /* Visual properties */
+    color: blue;
+    border: 2px solid red;
+    border-radius: 10px;
+
+    /* The rest */
+    opacity: 1;
+
+
+}
+

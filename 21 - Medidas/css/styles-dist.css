@@ -1,0 +1,64 @@
+/* Absolute and relative measurements
+
+Absolute measurements DOESN'T CHANGE and they always keep its size regardless of device or user interaction.
+
+The most used one is px (pixels) whose measure is 1/96 of 1 in, but there are others:
+    1 cm -> 96px/2,54
+    1 mm -> 1/10 of 1cm
+    Q (quarter of mm)
+    in(inches) -> 1 in = 2,54 = 96px
+    pc (picas) -> 1pc = 1/16 of 1 in
+    pt (puntos) -> 1pt = 1/72 of 1 in
+
+Relative measurements always depend on a context. They are the ones that are recommended to be used in most cases since they allow all the elements to scale proportionally. The most used ones are: em, rem, %, vm, vh, vmin, vmax, ex (x height of element font), ch (measure of the width of glyph 0 of the letter of the element), lh (height of element line).
+
+    16px = 1rem
+    10 px = 1em
+rem -> corresponds to the measure of the "m" of the root of the document.
+em -> corresponds to the measure of the "m" of the context where we are.
+
+Standard font size in the root of the document: 16px. It's not recommended to modify it.
+
+em and rem are calculated according to the font-size property.
+ */
+
+body{
+    background-color: #333;
+    color: lightcoral;
+    margin: 0;
+}
+
+/*
+.title{
+    font-size: 2rem;
+}*/
+
+.link{
+    background-color: lightcoral;
+    color: #333;
+    /*padding: 16px 32px; */
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 3rem;
+    margin-bottom: auto;
+}
+
+/* If the measure that we establish has to grow according to font size -> em
+   If the measure that we establish has to be always the same and relative to font size -> rem
+ */
+
+.box{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: lightgreen;
+}
+
+.box-children{
+    width: auto;
+    height: auto;
+    background-color: lightseagreen;
+    margin-left: 100px;
+}
+
+/* When we use auto, the height is calculated by the browser according to the content of the element.  

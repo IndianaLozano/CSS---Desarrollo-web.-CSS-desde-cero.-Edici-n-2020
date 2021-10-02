@@ -1,13 +1,13 @@
 /* SELECTORES 
 
-    Selectores Simples
-        Selectores elementales: suelen usarse para un par de cuestiones muy concretas
-            Selector universal -> *
-            Selector de tipo o de etiqueta -> Nombre de la etiqueta
-        Selectores de atributo
-            id -> #id del elemento       Los selectores de id son case sensitive.
-            clase -> clase del elemento
-            otros atributos -> [atributo]
+    1) Selectores Simples
+        1.a) Selectores elementales: suelen usarse para un par de cuestiones muy concretas
+            1.a.a) Selector universal -> *
+            1.a.b) Selector de tipo o de etiqueta -> Nombre de la etiqueta
+        1.b) Selectores de atributo
+            1.b.a) id -> #id del elemento       Los selectores de id son case sensitive.
+            1.b.b) clase -> clase del elemento
+            1.b.c) otros atributos -> [atributo]
                                 [atributo=valor]
                                 [atributo^=valor] para comprobar si el atributo empieza por ese valor
                                 [atributo*=valor] para comprobar si el atributo contiene a ese valor

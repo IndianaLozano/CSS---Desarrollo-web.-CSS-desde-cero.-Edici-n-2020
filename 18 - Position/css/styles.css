@@ -12,13 +12,13 @@ Stacking context / contexto de apilamiento: order in which overlapping boxes wil
 
 When positioning an element, 5 properties are enabled that we can use to move the elements in the 3 axes:
 
-    top -> the element will move from the top the distance that we have indicated.
+    top -> the element will move from the top, the distance that we have indicated.
 
-    right -> the element will move from the right the distance that we have indicated.
+    right -> the element will move from the right, the distance that we have indicated.
 
-    bottom -> the element will move from the bottom the distance that we have indicated.
+    bottom -> the element will move from the bottom, the distance that we have indicated.
 
-    left -> the element will move from the left the distance that we have indicated.
+    left -> the element will move from the left, the distance that we have indicated.
 
     z-index -> allows to move the element in the stacking context (Z axis).
 
