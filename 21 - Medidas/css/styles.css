@@ -20,6 +20,23 @@ em -> corresponds to the measure of the "m" of the context where we are.
 Standard font size in the root of the document: 16px. It's not recommended to modify it.
 
 em and rem are calculated according to the font-size property.
+
+VIEWPORT: util area (WITHOUT SCROLLING) where the web page is shown. We can use the viewport as a measure in several ways:
+ vw -> Viewport Width
+ vh -> Viewport Height
+ vmax -> uses the maximum value between viewport width and height.
+ vmin -> uses the minimun value between viewport width and height.
+
+ 1vw = 1% of viewport width.
+ 1vh = 1% of viewport height.
+
+ WIDTH AND HEIGHT LIMITS
+ When we establish width or height with a relative measure, it's possible that we don't always want to respect that measure.
+ We have properties that limit those measures:
+ - min-width
+ - max-width
+ - min-height
+ - max-height
  */
 
 body{

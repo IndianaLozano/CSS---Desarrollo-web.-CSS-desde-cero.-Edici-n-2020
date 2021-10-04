@@ -1,0 +1,77 @@
+/*
+Colors: most displays work with an additive color mode. The sum of RGB results in white. There are several ways to color in CSS.
+
+Keywords that represent colors: https://www.w3schools.com/css/css_colors_keywords.asp
+Remember that color "transparent" exists.
+
+RGB mode has 3 channels (Red, Green, Blue) and 8 bits of color per channel (each bit is 0 or 1) --> 256 possible values from 0 to 255 --> 256 * 256 * 256 = 16.581.375 colors.
+Its syntax is rgb(R,G,B).
+
+    By putting: all channels to 0 -> we have a pure black,
+            all channels to 1 -> a pure white.
+
+    To move through the range of grays, put the 3 channels with the same value. rgb(128,128,128) is pure gray.
+
+    RGB mode gives the option of using a 4th channel, the "alpha" channel, which is transparency, and its value goes from 0 to 1.
+
+    rgba(R,G,B,A)
+    rgb(R G B / A)
+
+HEXADECIMAL notation is the most common in web development; it is based on the same principles as RGB but written in hexadecimal. Hexadecimal system is based on 16 values from 0 to 15. It uses 0 to 9 and A to F. It's composed of 16 characters with their partners (16 * 16 = 256):
+ 0 1 2 3 4 5 6 7 8 9 A B C D E F
+ 0 1 2 3 4 5 6 7 8 9 A B C D E F
+ #RRGGBB
+ When a couple uses the same value, we can omit the second value:
+ #FFFFFF -> #FFF
+ #000000 -> #000
+ Also, we can use transparency with a 4th channel with the same rules.
+ #00000080 -> #0008
+
+HSL/HSLA: color mode more intuitive for humans. Hue (tono), Saturation, Lightness.
+    First value is the angle on the color wheel where 0 and 360 are color red. There are a few values that can be used as a reference to relate better the colors with their angles.
+    0 -> red
+    60 -> yellow
+    120 -> lime
+    180 -> cyan
+    240 -> azul
+    300 -> magenta
+
+    Second value is saturation or color intensity.
+    0% -> gray
+    100% -> pure color
+
+    Third value is lightness:
+    0% -> black
+    100% -> white
+    It's important to use % to make it work.
+
+    HSL admits transparency and its syntax is the same as RGB mode.
+    hsl(h s l / a)
+    hsla(h,s,l,a)
+    alpha goes from 0 to 1
+    
+    hsl(0, 100%, 50%) -> pure red
+
+4 other mode colors:
+    CMYK (Cyan, Magenta, Yellow, Black)
+    HWB(Hue, Whiteness, Blackness)
+    lab(lightness, distance a, distance b)
+    all are in draft level 4 color module but not standard yet
+
+ */
+
+body{
+    background-color: mediumorchid;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    /*margin-top: 10px;
+    border-right: 100px solid red;
+    border-top: 100px solid blue;
+    border-bottom: 100px solid green;*/
+    background-color: rgb(255,255,0);
+    box-shadow: 20px 5px 10px rgb(0 0 0 / .5);
+
+}
