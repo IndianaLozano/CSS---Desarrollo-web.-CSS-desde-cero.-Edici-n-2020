@@ -1,0 +1,45 @@
+/*
+Pseudoelementos: se utilizan para dar estilos a partes específicas de un elemento. Son objetos virtuales que creamos. La sintaxis es selector::pseudo-element{ estilos }
+
+Existen 5 pseudoelementos:
+    ::first-letter (elementos de bloque)
+    ::first-line (elementos de bloque)
+    ::before
+    ::after
+    ::selection (retirado de la especificación)
+
+        La propiedad content es obligatoria.
+        Son elementos de línea por defecto.
+        Son hijos del elemento al que pertenecen.
+
+ */
+.title::first-letter{
+    color: red;
+    font-size: 2em;
+}
+
+.text::first-line{
+    color: blue;
+    font-size: 2em;
+}
+
+.text::selection{
+    color: lime;
+    background: violet;
+}
+
+.dolar::before{
+    content: '$';
+}
+
+.dolar::after{
+    content: '.00';
+}
+
+.dolar::before, .dolar::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
