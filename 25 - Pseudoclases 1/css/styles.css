@@ -1,4 +1,13 @@
 /*
+PSEUDOCLASES: selectores que reaccionan en tiempo real detectando la interacción del usuario con algunos elementos. Funcionan con todos los selectores de CSS. No están atados a ningún elemento.
+
+selector:pseudoclase{
+    estilos
+}
+
+:pseudoclase{
+    estilos
+}
 Dynamic
     :link (links) - Link no visitado
     :visited (links) - Link visitado
@@ -11,8 +20,6 @@ Language
     :lang() - Elemento que contiene el atributo lang que especifiquemos
 */
 
-/*
-    ===Ejercicios PSEUDOCLASES I===
         .link:link {
             color: red;
         }
@@ -73,4 +80,3 @@ Language
         .span:lang(es) {
             color: blue;
         }
-        */

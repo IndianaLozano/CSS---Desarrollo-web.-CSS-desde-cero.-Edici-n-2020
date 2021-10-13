@@ -13,6 +13,7 @@ Existen 5 pseudoelementos:
         Son hijos del elemento al que pertenecen.
 
  */
+
 .title::first-letter{
     color: red;
     font-size: 2em;
