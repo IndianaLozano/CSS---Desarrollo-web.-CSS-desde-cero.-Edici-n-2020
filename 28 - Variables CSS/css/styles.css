@@ -1,0 +1,38 @@
+/*
+ VARIABLES CSS
+ Variable: es un espacio de memoria en el que guardamos un valor para reutilizarlo o modificarlo; necesita estar dentro de un selector; tiene herencia y cascada. Existen variables globales y locales, dependerá del selector en el que las declaremos. Variables CSS no son lo mismo que variables SASS.
+
+Declaración:
+
+    selector{
+    --nombreDeVariable: valor;
+    }
+
+Uso:
+    propiedad: var(--nombreDeVariable)
+
+*/
+
+:root {
+    --color: blue;
+    --border: 3px solid yellow;
+}
+
+.paragraph {
+    color: var(--color)
+}
+
+.article{
+    --color:green;
+}
+
+.check:checked + .box{
+    --color: purple;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: var(--color);
+    border: var(--border)
+}
